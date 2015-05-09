@@ -12,5 +12,5 @@ I'll assume you have minicom installed and arduino is using ACM0.
 1. Upload this code to your arduino.
 2. Run minicom -b 9600 -o -D /dev/ttyACM0 
 3. You should see "Hello world" and an (increasing) integer.
-4. Type a character while in minicom. After the integer you should see the caracter you typed.
-5. Run echo "Write this." >> /dev/ttyACM0
+4. Type a character while in minicom. After the integer you should see the character you just typed.
+5. Run echo "Write this." >> /dev/ttyACM0. You should see the message Write this after the integer.
