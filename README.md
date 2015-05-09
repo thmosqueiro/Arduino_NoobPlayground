@@ -1,2 +1,3 @@
 # Arduino_NoobPlayground
-My little noob playground
+
+If you are not a noob, you'll be bored =)
