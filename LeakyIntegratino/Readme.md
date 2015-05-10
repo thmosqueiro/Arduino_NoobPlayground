@@ -4,7 +4,7 @@ Leaky Integratino
 The idea is to develop a leaky integrate-and-fire neuron module with
 temperature dependence and a current clamp.
 
-![Simple example](https://raw.githubusercontent.com/thmosqueiro/Arduino_NoobPlayground/master/LeakyIntegratino/Example.png)
+![Simple example](https://raw.githubusercontent.com/thmosqueiro/Arduino_NoobPlayground/master/LeakyIntegratino/LeakyIntegratino.png)
 
 Usage
 ---
