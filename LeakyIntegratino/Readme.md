@@ -18,6 +18,9 @@ red LED.
 Usage
 ---
 
-Just upload the .ino code into arduino, mount a simple circuit (pic,
-no source available now -- too simple!) and use the python companion
-script to plot it on your computer.
+Just upload the .ino code into arduino, mount a simple circuit (see
+below the simple schematics) and use the python companion script to
+plot it on your computer.
+
+
+<img src="https://raw.githubusercontent.com/thmosqueiro/Arduino_NoobPlayground/master/LeakyIntegratino/LIFino_schematics.png" width=400px style="display: block; margin: 10px auto 10px auto;" />
