@@ -28,13 +28,13 @@ pl.ylabel('Membrane potential (a.u.)')
 line, = pl.plot(t, Vhist, 'r-', linewidth=2.0)
 pl.draw()
 
-
 while 1:
     integratino.flush()
     r = integratino.readline()
     var = r.split('\n')[0].split('\r')[0].split(' ')
     
     if len(var) == 3 :
+        
         # Shuffling
         Vhist[:-1] = Vhist[1:]
         Ihist[:-1] = Ihist[1:]

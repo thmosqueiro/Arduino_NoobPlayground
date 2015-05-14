@@ -12,7 +12,7 @@ String content = "", reading = "";
 char character;
 
 // Spiked in the last t_rest period flag
-double t_rest = 2.0;
+double t_rest = 0.5;
 double last_spike = -100.;
 boolean Not_Resting = true;
 
@@ -73,11 +73,11 @@ void loop()
   }
   
   t++;
-  Serial.print(t*dt);
+  Serial.print(t*dt, 2);
   Serial.print(" ");
-  Serial.print(I);
+  Serial.print(I, 2);
   Serial.print(" ");
-  Serial.println(Vm);
+  Serial.println(Vm, 8);
   
   delay(50);
 }
