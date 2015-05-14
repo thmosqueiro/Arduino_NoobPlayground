@@ -17,7 +17,7 @@ Ihist = np.zeros( (length,1) )
 pl.figure()
 pl.ion()
 
-pl.ylim([-0.1,2.1])
+pl.ylim([-0.5,2.1])
 pl.xlim([0,t[-1]])
 
 pl.plot([-10,t[-1]+10], [1.0,1.0], 'g--')
