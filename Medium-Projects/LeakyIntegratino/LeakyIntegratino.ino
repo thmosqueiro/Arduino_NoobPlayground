@@ -6,7 +6,7 @@ double V0     = 0.0; // resting potential
 double Vm     = 0.0; // membrane potential
 double Vth    = 1.0; // threshold potential
 double Vr     = 0.0; // resetting potential
-double g      = 2.0; //
+double g      = 1.5; //
 int inCurrent = 0;   // input current
 
 double PulseAmplitude = 5.0; // amplitude of the button pulse
@@ -27,7 +27,7 @@ int ledPin_inputSPK  = 3;  // Output LED pin
 // Temperature sensor
 int tempPin = 1;        // Analog temperature sensor pin
 int reading;            // Reading from sensor
-float NersntEffectCons = 0.01;
+float NersntEffectCons = 0.05;
 
 
 // Analogical output
