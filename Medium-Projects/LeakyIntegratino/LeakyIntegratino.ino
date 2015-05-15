@@ -6,7 +6,7 @@ double V0     = 0.0; // resting potential
 double Vm     = 0.0; // membrane potential
 double Vth    = 1.0; // threshold potential
 double Vr     = 0.0; // resetting potential
-double g      = 1.0; //
+double g      = 1.5; //
 int inCurrent = 0;   // input current
 
 double PulseAmplitude = 5.0; // amplitude of the button pulse
@@ -30,6 +30,9 @@ int reading;            // Reading from sensor
 float NersntEffectCons = 0.05;
 
 
+// Analogical output
+int outputPin = 6;
+
 
 // Setting up the serial port
 void setup() 
@@ -44,6 +47,7 @@ void setup()
   pinMode(readInterrupt, INPUT);
   pinMode(ledPin_inputSPK, OUTPUT);
   pinMode(ledPin_spikesign, OUTPUT);
+  pinMode(outputPin, OUTPUT);
 }
 
 void loop() 
@@ -64,7 +68,7 @@ void loop()
   digitalWrite(ledPin_inputSPK, inCurrent);
   
   // Updating the input current
-  double I = .3 + inCurrent*PulseAmplitude;
+  double I = .2 + inCurrent*PulseAmplitude;
   
   // Updating the membrane potential
   if ( Not_Resting )
@@ -100,6 +104,9 @@ void loop()
   Serial.print(V0, 2);
   Serial.print(" ");
   Serial.println(Vm, 8);
+  
+  // Updating the analogical output (using PWM)
+  analogWrite(outputPin, min(max(20,Vm*250),240) );
   
   delay(30);
 }
