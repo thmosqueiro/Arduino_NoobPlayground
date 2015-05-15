@@ -22,7 +22,7 @@ pl.xlim([0,t[-1]])
 
 pl.plot([-10,t[-1]+10], [1.0,1.0], 'g--')
 
-pl.xlabel('time (ms)')
+pl.xlabel('time (s)')
 pl.ylabel('Membrane potential (a.u.)')
 
 line, = pl.plot(t, Vhist, 'r-', linewidth=2.0)
