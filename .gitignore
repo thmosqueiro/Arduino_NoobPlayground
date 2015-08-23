@@ -1,5 +1,9 @@
 *~
 
+*.bak
+*-bak
+*.directory
+
 # Object files
 *.o
 *.ko
@@ -11,7 +15,6 @@
 *.pch
 
 # Libraries
-*.lib
 *.a
 *.la
 *.lo
